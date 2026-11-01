@@ -1,39 +1,134 @@
-# LifePocket — Build 004
+LifePocket – Your Life, Organised
 
-A personal life-management prototype built with React, TypeScript and Vite.
+LifePocket is a personal life and finance management platform designed to help individuals organise their everyday commitments, monitor their finances and manage important aspects of daily life in one place.
 
-## Run locally
+The project explores how a centralised digital workspace can simplify personal organisation through an intuitive interface, practical financial tracking tools and useful everyday insights.
 
-1. Extract this folder.
-2. Open the extracted `lifepocket-build-001` folder in VS Code.
-3. In the terminal run:
+Live Application
 
-   ```powershell
-   npm.cmd install
-   npm.cmd run dev
-   ```
+Live Demo: https://lifepocket-five.vercel.app
 
-4. Open the local URL printed by Vite.
+GitHub Repository: https://github.com/nuelokoloigwe-tech/lifepocket
 
-## Build 004
-Loans & Cards now uses an editable spreadsheet-style register. Switch between Credit Cards and Loans, add a row, and type directly into the cells. Credit-card available credit and utilisation plus table totals are calculated automatically.
+Product Vision
 
-Data is stored locally in the browser. This is a prototype, not a cloud-synchronised or bank-connected service.
+LifePocket aims to bring everyday personal organisation into one accessible workspace.
 
+Rather than switching between multiple applications to manage bills, income, reminders, loans, shopping lists and personal tasks, users can access these tools through a single dashboard.
 
-## Build 005 — Debt register visibility
-The Loans and Credit Cards views are now exposed as clear, always-visible tabs. Select **Loans** to open the loan register, then use **Add loan** to create a row.
+Key Features
 
+| Feature | Description |
+|---|---|
+| Dashboard | Central overview of personal activities and commitments. |
+| Calendar | View and organise upcoming activities. |
+| Money & Payments | Track bills, payment status and monthly payment history. |
+| Income Tracker | Record and monitor income from different sources. |
+| Loans & Cards | Track financial commitments, limits, utilisation and outstanding balances. |
+| Tasks & Reminders | Organise daily tasks and important reminders. |
+| Document Wallet | Personal document organisation interface. |
+| Shopping | Manage shopping lists and purchases. |
+| Insights | Financial tips, educational content and published articles. |
 
-## Build 006 — Spreadsheet-style debt register
-Credit Cards and Loans are separate registers with direct cell editing. Both include provider fields. Credit card available credit and utilisation are calculated automatically. Loan original amount, outstanding balance, monthly repayment, APR and next payment date are editable. Empty registers show an explicit Add first row action. Data is stored locally in this browser; no bank connection is used.
+Technology Stack
 
+- **Frontend:** React
+- **Programming Language:** TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+- **Version Control:** Git and GitHub
+- **Data Persistence:** Browser Local Storage
 
-## Income register
-The Money workspace now opens with an Income tab and a Payments tab. Income supports direct table entry for source, category, amount, frequency and next pay date. Monthly income is estimated from weekly, fortnightly, monthly, quarterly and annual amounts; one-off income is excluded. Entries are stored locally in the browser under `lp-income`. No sample personal income is preloaded.
+Getting Started
 
+To run LifePocket locally:
 
-## Build 009 — Approved debt register
-The Loans & Cards area now uses a category dropdown and the approved five-column register: Item, Limit, Utilised, Balance and Usage. Balance and Usage are calculated automatically; changes persist in browser local storage under `lp-debt-register`.
+Prerequisites
 
-Build 010 adjustment: the Money section opens on Payments by default to preserve the previous experience; Income remains available as a separate tab.
+- Node.js
+- npm
+- Git
+
+Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/nuelokoloigwe-tech/lifepocket.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd lifepocket
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+### Production Build
+
+To generate a production build:
+
+```bash
+npm run build
+```
+
+The production files are generated in the `dist` directory.
+
+Product Development Approach
+
+LifePocket has been developed iteratively, with features refined through successive development and testing cycles.
+
+The development approach includes:
+
+- Identifying user needs and translating them into product functionality.
+- Breaking requirements into manageable features.
+- Designing and refining user interfaces.
+- Implementing functionality and data calculations.
+- Testing user interactions and validating expected outcomes.
+- Identifying defects and improving the application through iterative releases.
+- Using GitHub for source control and Vercel for deployment.
+
+Current Limitations
+
+LifePocket is an evolving prototype and is not yet intended to manage real users' sensitive financial information.
+
+Current limitations include:
+
+- Data is stored locally in the browser.
+- There is no user authentication or shared cloud database.
+- Data is not automatically synchronised between devices.
+- The Document Wallet is an organisational prototype, not secure document storage.
+- Financial information must be treated as demonstration data.
+
+Future development will explore secure authentication, cloud-based persistence, improved document management and additional intelligent personal organisation capabilities.
+
+Future Roadmap
+
+Potential development priorities include:
+
+- User authentication and personalised accounts.
+- Secure cloud data storage and synchronisation.
+- Enhanced financial reporting and visual analytics.
+- Improved document management.
+- More personalised financial insights.
+- AI-assisted personal organisation.
+
+Licence
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+**LifePocket – Your life. Organised in one place.**
